@@ -1,0 +1,18 @@
+server:
+  port: 8080  
+spring:
+  profiles:
+    active: local
+  application:
+    name: food
+  datasource:
+    url: jdbc:postgresql://localhost:5432/store?currentSchema=sch_store
+    username: postgres
+    password: 407190
+#    driverClassName: org.postgresql.Driver
+application:
+   jwt:
+      secretKey: securesecuresecuresecuresecuresecuresecuresecuresecuresecuresecure
+      tokenPrefix: Bearer 
+      tokenExpirationAfterDays: 10    
+
